@@ -21,28 +21,9 @@
             -webkit-text-stroke: 2px #fff;
             font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             /* Use San Francisco font if available, fallback to system fonts */
-        }
-
-        /* Adjust typography for different screen sizes using media queries */
-        /* For screens up to 768px wide */
-        @media screen and (max-width: 768px) {
-            .outline-heading {
-                font-size: 24px; /* Adjust font size for smaller screens */
-            }
-        }
-
-        /* For screens between 768px and 992px wide */
-        @media screen and (min-width: 769px) and (max-width: 992px) {
-            .outline-heading {
-                font-size: 36px; /* Adjust font size for medium-sized screens */
-            }
-        }
-
-        /* For screens larger than 992px wide */
-        @media screen and (min-width: 993px) {
-            .outline-heading {
-                font-size: 48px; /* Adjust font size for larger screens */
-            }
+            text-align: center; /* Center align the text */
+            margin-top: 50vh; /* Vertically center the text */
+            transform: translateY(-50%); /* Vertically center the text */
         }
     </style>
 </head>
