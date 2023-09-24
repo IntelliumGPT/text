@@ -5,8 +5,7 @@
     <title>Intellium Introduction</title>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta content="Webflow" name="generator"/>
-    <link href="./styles.css" rel="stylesheet" type="text/css"/>
-    <!-- Add a link to the responsive framework's CSS here, e.g., Bootstrap -->
+    <!-- Include Bootstrap CSS for responsive layout -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Define the @font-face rule for San Francisco font */
@@ -24,17 +23,32 @@
             /* Use San Francisco font if available, fallback to system fonts */
         }
 
-        /* Add responsive CSS rules using media queries */
+        /* Adjust typography for different screen sizes using media queries */
+        /* For screens up to 768px wide */
         @media screen and (max-width: 768px) {
-            /* Adjust styles for smaller screens */
-            .big-section {
-                /* Add responsive styles for .big-section */
+            .outline-heading {
+                font-size: 24px; /* Adjust font size for smaller screens */
+            }
+        }
+
+        /* For screens between 768px and 992px wide */
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+            .outline-heading {
+                font-size: 36px; /* Adjust font size for medium-sized screens */
+            }
+        }
+
+        /* For screens larger than 992px wide */
+        @media screen and (min-width: 993px) {
+            .outline-heading {
+                font-size: 48px; /* Adjust font size for larger screens */
             }
         }
     </style>
 </head>
 <body class="body">
-    <div class="container">
+    <!-- Use Bootstrap container for responsive layout -->
+    <div class="container-fluid">
         <a data-w-id="1973d9d9-0df7-b3ff-c947-bee31dff83fe" href="#" class="outlinewrap w-inline-block">
             <div data-w-id="1973d9d9-0df7-b3ff-c947-bee31dff83ff" style="width:0%" class="text-mask">
                 <h1 class="outline-heading">Intellium</h1>
