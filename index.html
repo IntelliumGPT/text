@@ -5,7 +5,8 @@
     <title>Intellium Introduction</title>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta content="Webflow" name="generator"/>
-    <!-- Include Bootstrap CSS for responsive layout -->
+    <link href="./styles.css" rel="stylesheet" type="text/css"/>
+    <!-- Add a link to the responsive framework's CSS here, e.g., Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Define the @font-face rule for San Francisco font */
@@ -21,15 +22,19 @@
             -webkit-text-stroke: 2px #fff;
             font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             /* Use San Francisco font if available, fallback to system fonts */
-            text-align: center; /* Center align the text */
-            margin-top: 50vh; /* Vertically center the text */
-            transform: translateY(-50%); /* Vertically center the text */
+        }
+
+        /* Add responsive CSS rules using media queries */
+        @media screen and (max-width: 768px) {
+            /* Adjust styles for smaller screens */
+            .big-section {
+                /* Add responsive styles for .big-section */
+            }
         }
     </style>
 </head>
 <body class="body">
-    <!-- Use Bootstrap container for responsive layout -->
-    <div class="container-fluid">
+    <div class="container">
         <a data-w-id="1973d9d9-0df7-b3ff-c947-bee31dff83fe" href="#" class="outlinewrap w-inline-block">
             <div data-w-id="1973d9d9-0df7-b3ff-c947-bee31dff83ff" style="width:0%" class="text-mask">
                 <h1 class="outline-heading">Intellium</h1>
